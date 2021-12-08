@@ -32,10 +32,7 @@ let
   wrapper = ./hoogle-local-wrapper.sh;
   isGhcjs = ghc.isGhcjs or false;
   opts = lib.optionalString;
-  haddockExe =
-    if !isGhcjs
-    then "haddock"
-    else "haddock-ghcjs";
+  haddockExe = "haddock";
   ghcDocLibDir =
     if !isGhcjs
     then ghc.doc + "/share/doc/ghc*/html/libraries"
