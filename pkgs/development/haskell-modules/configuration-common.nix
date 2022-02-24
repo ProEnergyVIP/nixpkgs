@@ -1489,7 +1489,7 @@ self: super: {
   });
 
   # 2021-03-09: Overrides because nightly is to old for hls 1.0.0
-  lsp-test = doDistribute (dontCheck self.lsp-test_0_14_0_0);
+  lsp-test = doDistribute (dontCheck self.lsp-test);
 
   # 2021-03-21 Test hangs
   # https://github.com/haskell/haskell-language-server/issues/1562
